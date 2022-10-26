@@ -135,127 +135,280 @@
     </Header>
 
     <main>
-        <!-- Promotional ad start -->
-        <section class="container max-w-screen-xl my-10">
+        <!--
+  This component uses @tailwindcss/forms and @tailwindcss/typography
 
-            <div class="flex flex-wrap gap-2">
-                <div class="flex md:flex-row sm: flex-col">
-                    <a href="#" class="block">
-                        <div class="m-2">
-                            <img src="https://img.freepik.com/free-psd/editable-turtleneck-t-shirt-mockup-psd-men-rsquo-s-casual-business-fashion-ad_53876-138385.jpg?w=1380&t=st=1666795321~exp=1666795921~hmac=152e335952b6fb5a33aeb55a33585433ef2dbb769d1e0b2325a43234bdf32205"
-                                alt="">
-                            <h3 class="m-auto bg-black p-2 text-yellow-400 font-poppins text-2xl text-center">
-                                Grab the season
-                            </h3>
-                        </div>
-                    </a>
+  yarn add @tailwindcss/forms @tailwindcss/typography
+  npm install @tailwindcss/forms @tailwindcss/typography
 
-                    <a href="#" class="block">
-                        <div class="m-2">
-                            <img src="https://img.freepik.com/free-psd/editable-men-s-t-shirt-psd-mockup-black-gray-activewear-ad_53876-123296.jpg?w=1380&t=st=1666795196~exp=1666795796~hmac=a28eb393f03e451a13b75bb62804c15ca7c90f7862f8b991d8fdaa271534a46f"
-                                alt="">
-                            <h3 class="m-auto bg-black p-2 text-yellow-400 font-poppins text-2xl text-center">
-                                Hurry up!
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Promotional ad end -->
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 
-        <!-- Shop our range start -->
+  @layer components {
+    .no-spinner {
+      -moz-appearance: textfield;
+    }
+
+    .no-spinner::-webkit-outer-spin-button,
+    .no-spinner::-webkit-inner-spin-button {
+      margin: 0;
+      -webkit-appearance: none;
+    }
+  }
+-->
+
         <section>
-            <!-- Range for him start-->
-            <div class="container max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
-                <div class="mb-8 flex sm:flex-row justify-between">
-                    <h2 class="text-2xl font-roboto font-semibold">Men's catagories</h2>
-                </div>
-                <div class="grid sm:grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:items-stretch">
-                    <div>
-                        <a href="/src/catagory.html" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+            <div class="relative mx-auto max-w-screen-xl px-4 py-8">
+                <div class="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
+                    <div class="grid grid-cols-2 gap-4 md:grid-cols-1">
+                        <img alt="Les Paul"
+                            src="https://images.unsplash.com/photo-1456948927036-ad533e53865c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                            class="aspect-square w-full rounded-xl object-cover" />
 
-                            <h3 class="font-medium mt-2 font-roboto">T-shirt</h3>
-                        </a>
+                        <div class="grid grid-cols-2 gap-4 lg:mt-4">
+                            <img alt="Les Paul"
+                                src="https://images.unsplash.com/photo-1456948927036-ad533e53865c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                class="aspect-square w-full rounded-xl object-cover" />
+
+                            <img alt="Les Paul"
+                                src="https://images.unsplash.com/photo-1456948927036-ad533e53865c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                class="aspect-square w-full rounded-xl object-cover" />
+
+                            <img alt="Les Paul"
+                                src="https://images.unsplash.com/photo-1456948927036-ad533e53865c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                class="aspect-square w-full rounded-xl object-cover" />
+
+                            <img alt="Les Paul"
+                                src="https://images.unsplash.com/photo-1456948927036-ad533e53865c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                                class="aspect-square w-full rounded-xl object-cover" />
+                        </div>
                     </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+                    <div class="sticky top-0">
+                        <strong
+                            class="rounded-full border border-blue-600 bg-gray-100 px-3 py-0.5 text-xs font-medium tracking-wide text-blue-600">
+                            catagory name
+                        </strong>
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+                        <div class="mt-8 flex justify-between">
+                            <div class="max-w-[35ch]">
+                                <h1 class="text-2xl font-bold font-roboto">
+                                    Mens Casual Shirt
+                                </h1>
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+                                <p class="mt-0.5 text-sm text-slate-400">SKU-2638</p>
+                            </div>
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+                            <p class="text-lg font-bold text-green-600">BDT 1500</p>
+                        </div>
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+                        <details class="group relative mt-4">
+                            <summary class="block">
+                                <div>
+                                    <div class="prose max-w-none group-open:hidden">
+                                        <h4>Product details:</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                                            veniam dicta beatae eos ex error culpa delectus rem tenetur,
+                                            architecto quam nesciunt, dolor veritatis nisi minus
+                                            inventore, rerum at recusandae?
+                                        </p>
+                                    </div>
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="block">
-                            <img alt="Simple Watch"
-                                src="https://images.unsplash.com/photo-1459785704030-654f6c5934a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1734&q=80"
-                                class="aspect-square w-full rounded object-cover" />
+                                    <span
+                                        class="mt-4 cursor-pointer text-sm font-medium underline group-open:absolute group-open:bottom-0 group-open:left-0 group-open:mt-0">
+                                        Read More
+                                    </span>
+                                </div>
+                            </summary>
 
-                            <h3 class="font-medium mt-2 font-roboto">Catagory Name</h3>
-                        </a>
+                            <div class="prose max-w-none pb-6">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                                    veniam dicta beatae eos ex error culpa delectus rem tenetur,
+                                    architecto quam nesciunt, dolor veritatis nisi minus inventore,
+                                    rerum at recusandae?
+                                </p>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                                    nam sapiente nobis ea veritatis error consequatur nisi
+                                    exercitationem iure laudantium culpa, animi temporibus non! Maxime
+                                    et quisquam amet. A, deserunt!
+                                </p>
+                            </div>
+                        </details>
+
+                        <form class="mt-8">
+                            <!-- color variant -->
+                            <fieldset>
+                                <legend class="mb-1 text-sm font-medium">Color</legend>
+
+                                <div class="mt-2 flex gap-1">
+                                    <label for="color_green" class="cursor-pointer">
+                                        <input type="radio" id="color_green" name="color" class="peer sr-only"
+                                            checked />
+
+                                        <span
+                                            class="block h-6 w-6 rounded-full border border-gray-200 bg-green-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"></span>
+                                    </label>
+
+                                    <label for="color_blue" class="cursor-pointer">
+                                        <input type="radio" id="color_blue" name="color" class="peer sr-only" />
+
+                                        <span
+                                            class="block h-6 w-6 rounded-full border border-gray-200 bg-blue-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"></span>
+                                    </label>
+
+                                    <label for="color_pink" class="cursor-pointer">
+                                        <input type="radio" id="color_pink" name="color" class="peer sr-only" />
+
+                                        <span
+                                            class="block h-6 w-6 rounded-full border border-gray-200 bg-pink-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"></span>
+                                    </label>
+
+                                    <label for="color_red" class="cursor-pointer">
+                                        <input type="radio" id="color_red" name="color" class="peer sr-only" />
+
+                                        <span
+                                            class="block h-6 w-6 rounded-full border border-gray-200 bg-red-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"></span>
+                                    </label>
+
+                                    <label for="color_indigo" class="cursor-pointer">
+                                        <input type="radio" id="color_indigo" name="color" class="peer sr-only" />
+
+                                        <span
+                                            class="block h-6 w-6 rounded-full border border-gray-200 bg-indigo-700 ring-1 ring-transparent ring-offset-1 peer-checked:ring-gray-300"></span>
+                                    </label>
+                                </div>
+                            </fieldset>
+
+                            <!-- size variant -->
+                            <fieldset class="mt-4">
+                                <legend class="mb-1 text-sm font-medium">Size</legend>
+
+                                <div class="flow-root">
+                                    <div class="-m-0.5 flex flex-wrap">
+                                        <label for="size_xs" class="cursor-pointer p-0.5">
+                                            <input type="radio" name="size" id="size_xs" class="peer sr-only" />
+
+                                            <span
+                                                class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                                XS
+                                            </span>
+                                        </label>
+
+                                        <label for="size_s" class="cursor-pointer p-0.5">
+                                            <input type="radio" name="size" id="size_s" class="peer sr-only" />
+
+                                            <span
+                                                class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                                S
+                                            </span>
+                                        </label>
+
+                                        <label for="size_m" class="cursor-pointer p-0.5">
+                                            <input type="radio" name="size" id="size_m" class="peer sr-only" />
+
+                                            <span
+                                                class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                                M
+                                            </span>
+                                        </label>
+
+                                        <label for="size_l" class="cursor-pointer p-0.5">
+                                            <input type="radio" name="size" id="size_l" class="peer sr-only" />
+
+                                            <span
+                                                class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                                L
+                                            </span>
+                                        </label>
+
+                                        <label for="size_xl" class="cursor-pointer p-0.5">
+                                            <input type="radio" name="size" id="size_xl" class="peer sr-only" />
+
+                                            <span
+                                                class="group inline-flex h-8 w-8 items-center justify-center rounded-full border text-xs font-medium peer-checked:bg-black peer-checked:text-white">
+                                                XL
+                                            </span>
+                                        </label>
+
+                                        <button type="submit"
+                                            class="ml-3 block border border-gray-900 rounded bg-white px-3 py-2 text-xs font-medium text-black hover:bg-slate-300">
+                                            Size Guide
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <!-- quantity select -->
+                            <div class="mt-4">
+                                <legend class="mb-1 text-sm font-medium">Quantity</legend>
+
+                                <span class="inline-flex divide-x overflow-hidden rounded-md border bg-white shadow-sm">
+                                    <button class="inline-block px-2 text-gray-700 hover:bg-gray-50 focus:relative"
+                                        title="Edit Product">
+                                        -
+                                    </button>
+
+                                    <input type="number" id="quantity" min="1" value="1"
+                                        class="w-12 rounded border-gray-100 text-center text-xs [-moz-appearance:_textfield] [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none" />
+
+                                    <button class="inline-block px-2 text-gray-700 hover:bg-gray-50 focus:relative"
+                                        title="Delete Product">
+                                        +
+                                    </button>
+                                </span>
+
+                            </div>
+
+                            <!-- Add to bag btn -->
+                            <div class="mt-8 flex">
+                                <button type="button"
+                                    class="mt-4 mr-2 flex w-full items-center justify-center rounded-sm bg-black text-white px-8 py-4">
+                                    <span class="text-sm font-medium"> Add to Bag </span>
+
+                                    <svg class="ml-1.5 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                    </svg>
+                                </button>
+                                <button type="button"
+                                    class="mt-4 ml-2 flex w-full items-center justify-center rounded-sm bg-white text-black border border-gray-900 px-8 py-4">
+                                    <span class="text-sm font-medium"> Go Back </span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Return and delivery -->
+                        <div class="my-8">
+                            <h4 class="mb-1 text-sm font-medium">Returns:</h4>
+                            <p class="text-sm mt-2">
+                                <span class="block"> *Returns are free within 7 days unless used. </span>
+
+                                <a href="" class="mt-1 inline-block underline text-blue-400"> Find out more about our
+                                    return policy
+                                </a>
+                            </p>
+
+                            <h4 class="mb-1 text-sm font-medium mt-4">Delivery:</h4>
+                            <p class="text-sm mt-1">
+                                <span class="block text-blue-400"> 2 to 3 days at metropolitan city </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Catagories section end -->
 
-        <hr class="container h-px my-6 bg-gray-300">
+        <hr class="container h-px my-10 bg-gray-300">
 
         <!-- Featured products start -->
         <section>
             <div class="container max-w-screen-xl px-4 py-8">
                 <div class="mb-8 flex sm:flex-row justify-between">
-                    <h2 class="text-2xl font-roboto font-semibold">Featured Products</h2>
+                    <h2 class="text-2xl font-roboto font-semibold">Other items in This catagory</h2>
                 </div>
 
                 <div class="mt-8 grid grid-cols-2 gap-6 lg:grid-cols-4">
@@ -341,107 +494,6 @@
         </section>
         <!-- Featured products end -->
 
-        <hr class="container h-px my-6 bg-gray-300">
-
-        <!-- New products start -->
-        <section>
-            <div class="container max-w-screen-xl px-4 py-8">
-                <div class="mb-8 flex sm:flex-row justify-between">
-                    <h2 class="text-2xl font-roboto font-semibold">New Arival</h2>
-                </div>
-
-                <div class="mt-8 grid grid-cols-2 gap-6 lg:grid-cols-4">
-
-                    <div class="border border-slate-100 shadow-lg">
-                        <img class="w-full" alt=""
-                            src="https://images.unsplash.com/photo-1624835567150-0c530a20d8cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2440&q=80"
-                            class="-mt-3 h-96 w-full object-cover" />
-
-                        <div class="flex items-center justify-between">
-                            <h3 class="mt-4 px-2 text-md font-medium text-slate-900">Mens casual shirt</h3>
-                        </div>
-
-                        <div class="mt-4 px-2 flex items-center justify-between font-bold">
-                            <p class="text-green-600">BDT <span class="sm:text-xs md:text-lg">1500</span></p>
-                            <p class="text-xs uppercase tracking-wide text-blue-600">6 Colors</p>
-                        </div>
-
-                        <button type="button"
-                            class="w-full items-center justify-center bg-black text-white px-8 py-3 mt-3">
-                            <span class="text-sm font-medium px-2"> View Details </span>
-                        </button>
-                    </div>
-                    <div class="border border-slate-100 shadow-lg">
-                        <img class="w-full" alt=""
-                            src="https://images.unsplash.com/photo-1624835567150-0c530a20d8cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2440&q=80"
-                            class="-mt-3 h-96 w-full object-cover" />
-
-                        <div class="flex items-center justify-between">
-                            <h3 class="mt-4 px-2 text-md font-medium text-slate-900">Mens casual shirt</h3>
-                        </div>
-
-                        <div class="mt-4 px-2 flex items-center justify-between font-bold">
-                            <p class="text-green-600">BDT <span class="sm:text-xs md:text-lg">1500</span></p>
-                            <p class="text-xs uppercase tracking-wide text-blue-600">6 Colors</p>
-                        </div>
-
-                        <button type="button"
-                            class="w-full items-center justify-center bg-black text-white px-8 py-3 mt-3">
-                            <span class="text-sm font-medium px-2"> View Details </span>
-                        </button>
-                    </div>
-                    <div class="border border-slate-100 shadow-lg">
-                        <img class="w-full" alt=""
-                            src="https://images.unsplash.com/photo-1624835567150-0c530a20d8cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2440&q=80"
-                            class="-mt-3 h-96 w-full object-cover" />
-
-                        <div class="flex items-center justify-between">
-                            <h3 class="mt-4 px-2 text-md font-medium text-slate-900">Mens casual shirt</h3>
-                        </div>
-
-                        <div class="mt-4 px-2 flex items-center justify-between font-bold">
-                            <p class="text-green-600">BDT <span class="sm:text-xs md:text-lg">1500</span></p>
-                            <p class="text-xs uppercase tracking-wide text-blue-600">6 Colors</p>
-                        </div>
-
-                        <button type="button"
-                            class="w-full items-center justify-center bg-black text-white px-8 py-3 mt-3">
-                            <span class="text-sm font-medium px-2"> View Details </span>
-                        </button>
-                    </div>
-                    <div class="border border-slate-100 shadow-lg">
-                        <img class="w-full" alt=""
-                            src="https://images.unsplash.com/photo-1624835567150-0c530a20d8cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2440&q=80"
-                            class="-mt-3 h-96 w-full object-cover" />
-
-                        <div class="flex items-center justify-between">
-                            <h3 class="mt-4 px-2 text-md font-medium text-slate-900">Mens casual shirt</h3>
-                        </div>
-
-                        <div class="mt-4 px-2 flex items-center justify-between font-bold">
-                            <p class="text-green-600">BDT <span class="sm:text-xs md:text-lg">1500</span></p>
-                            <p class="text-xs uppercase tracking-wide text-blue-600">6 Colors</p>
-                        </div>
-
-                        <button type="button"
-                            class="w-full items-center justify-center bg-black text-white px-8 py-3 mt-3">
-                            <span class="text-sm font-medium px-2"> View Details </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- New products end -->
-
-        <!-- Message holder start -->
-        <section class="container max-w-screen-xl my-10">
-            <div class="">
-                <div class="bg-yellow-500 text-white text-center w-full">
-                    <h4 class="p-2">Free delivery in Dhaka city till 30 Nov</h4>
-                </div>
-            </div>
-        </section>
-        <!-- Message holder end -->
     </main>
     <!-- Main body section end -->
 
