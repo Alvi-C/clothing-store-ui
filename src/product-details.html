@@ -16,7 +16,7 @@
     <Header>
         <!-- Top header start -->
         <section class="h-8 bg-slate-300">
-            <div class="container max-w-screen-xl">
+            <div class="container max-w-screen">
                 <div class="flex px-2 -mx-4 md:mx-10 md:py-0 justify-end font-poppins">
                     <a href="#" class="p-2 text-black text-xs font-light hidden md:block">Contact & FAQ</a>
                     <a href="#" class="p-2 text-black text-xs font-light hidden md:block">Return Policy</a>
@@ -135,29 +135,9 @@
     </Header>
 
     <main>
-        <!--
-  This component uses @tailwindcss/forms and @tailwindcss/typography
-
-  yarn add @tailwindcss/forms @tailwindcss/typography
-  npm install @tailwindcss/forms @tailwindcss/typography
-
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
-
-  @layer components {
-    .no-spinner {
-      -moz-appearance: textfield;
-    }
-
-    .no-spinner::-webkit-outer-spin-button,
-    .no-spinner::-webkit-inner-spin-button {
-      margin: 0;
-      -webkit-appearance: none;
-    }
-  }
--->
 
         <section>
-            <div class="relative mx-auto max-w-screen-xl px-4 py-8">
+            <div class="relative container min-w-screen px-4 py-8">
                 <div class="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
                     <div class="grid grid-cols-2 gap-4 md:grid-cols-1">
                         <img alt="Les Paul"
@@ -406,12 +386,12 @@
 
         <!-- Featured products start -->
         <section>
-            <div class="container max-w-screen-xl px-4 py-8">
+            <div class="container min-w-screen px-4 py-8">
                 <div class="mb-8 flex sm:flex-row justify-between">
                     <h2 class="text-2xl font-roboto font-semibold">Other items in This catagory</h2>
                 </div>
 
-                <div class="mt-8 grid grid-cols-2 gap-6 lg:grid-cols-4">
+                <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-4">
 
                     <div class="border border-slate-100 shadow-lg">
                         <img class="w-full" alt=""
