@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <Header>
+        <!-- Top header start -->
+        <section class="h-8 bg-slate-300">
+            <div class="container min-w-screen">
+                <div class="flex px-2 -mx-4 md:mx-10 md:py-0 justify-end font-poppins">
+                    <a href="#" class="p-2 text-black text-xs font-light hidden md:block">Contact & FAQ</a>
+                    <a href="#" class="p-2 text-black text-xs font-light hidden md:block">Return Policy</a>
+                    <a href="#" class="p-2 text-black text-xs font-medium">Helpline: 01738880000</a>
+                    <a href="#" class="p-2 text-black text-xs font-medium">Login</a>
+                    <a href="#" class="p-2 text-black text-xs font-medium">Register</a>
+                </div>
+            </div>
+        </section>
+        <!-- Top header end -->
+
+        <!-- Main Menu start -->
+        <section>
+            <nav class="relative bg-black">
+                <div class="container px-6 py-3 mx-auto md:flex">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <a class="text-2xl font-bold text-white transition-colors duration-300 transform lg:text-3xl"
+                                href="#">URBANSTYLE</a>
+                        </div>
+
+                        <!-- Mobile menu button -->
+                        <div class="flex lg:hidden">
+                            <button type="button"
+                                class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+                                aria-label="toggle menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+                    <div
+                        class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-black md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
+                        <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
+                            <a href="/src/home.html"
+                                class="py-2 border-b-2 border-transparent text-white hover:text-white transition-colors duration-300 transform hover:border-white sm:mx-6">HOME</a>
+                            <a href="/src/catalog.html"
+                                class="py-2 border-b-2 border-transparent text-white hover:text-white transition-colors duration-300 transform hover:border-white sm:mx-6">MEN</a>
+                            <a href="#"
+                                class="py-2 border-b-2 border-transparent text-white hover:text-white transition-colors duration-300 transform hover:border-white sm:mx-6">WOMEN</a>
+                            <a href="#"
+                                class="py-2 border-b-2 border-transparent text-white hover:text-white transition-colors duration-300 transform hover:border-white sm:mx-6">KIDS</a>
+                        </div>
+
+                        <div class="relative mt-4 md:mt-0 flex">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                                <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+
+                            <input type="text"
+                                class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg focus:border-gray-600 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-gray-300"
+                                placeholder="Search">
+                            <div class="px-5 py-1">
+                                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                                        fill="white"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Main Menu end -->
+
+        <!-- Scroll start -->
+        <section>
+            <div class="h-8 bg-slate-300">
+                <h5 class="font-poppins text-sm font-light text-center py-1">Explore our shop. It's totally free!!!</h5>
+            </div>
+        </section>
+        <!-- Scroll end -->
+    </Header>
+    <!-- Main body section start -->
+    <main>
+        <div x-data="{show:false}">
+            <div class="flex items-center justify-center mt-40">
+                <button @click="show=true" class="px-4 py-2 font-semibold text-blue-100 bg-blue-600 rounded"
+                    type="button">Login
+                    Modal</button>
+            </div>
+            <div x-show="show" x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90"
+                class="absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50">
+
+                <div @click.away="show = false"
+                    class="flex flex-col w-full p-20 m-8 bg-white rounded-md lg:m-0 lg:w-1/4 sm:p-10">
+                    <div class="mb-8 text-center">
+                        <h1 class="my-3 text-4xl font-bold">Sign in</h1>
+                        <p class="text-sm text-coolGray-600">Sign in to shop your desired product</p>
+                    </div>
+                    <form action="" class="">
+                        <div class="space-y-4">
+                            <div>
+                                <label for="email" class="block mb-2 text-sm">Email address</label>
+                                <input type="email" name="email" placeholder="email"
+                                    class="w-full px-3 py-2 text-blue-800 border border-black rounded-md bg-blue-50 focus:outline-none focus:ring-1 focus:ring-blue-300">
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <label for="password" class="text-sm">Password</label>
+                                    <a href="#" class="text-xs text-blue-600 hover:underline">Forgot password?</a>
+                                </div>
+                                <input type="password" name="password" placeholder="password"
+                                    class="w-full px-3 py-2 text-blue-800 border border-black rounded-md bg-blue-50 focus:outline-none focus:ring-1 focus:ring-blue-300">
+                            </div>
+                        </div>
+                        <div class="mt-6 space-y-2">
+                            <div class="flex gap-x-2">
+                                <button type="button" class="w-full px-8 py-3 text-blue-100 bg-black rounded-md">Sign
+                                    in</button>
+                                <button @click="show = false" type="button"
+                                    class="w-full px-8 py-3 text-black border border-black rounded-md">Cancel</button>
+                            </div>
+                            <p class="px-6 pt-6 text-sm text-center text-coolGray-600">Don't have an shopping account
+                                yet?</p>
+                            <p class="px-6 text-MD text-center">
+                                <a href="#" class="text-black underline hover:text-blue-600">
+                                    CREATE AN ACCOUNT
+                                </a>
+                            </p>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main body section end -->
+
+    <!-- Footer start -->
+    <footer class="bg-gray-900">
+        <div class="container p-6 mx-auto">
+            <div class="lg:flex">
+                <div class="w-full -mx-6 lg:w-2/5">
+                    <div class="px-6">
+                        <div>
+                            <a href="#" class="text-xl font-bold text-white hover:text-gray-300">URBANSTYLE</a>
+                        </div>
+
+                        <p class="max-w-sm mt-2 text-gray-400">
+                            Urbanstyle is a progressive fashion wear online shop based in Bangladesh.
+                        </p>
+
+                        <div class="flex mt-6 -mx-2">
+                            <a href="#"
+                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                                aria-label="Facebook">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 lg:mt-0 lg:flex-1">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <div>
+                            <h3 class="uppercase text-white">About</h3>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Company</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">FAQ</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Careers</a>
+                        </div>
+
+                        <div>
+                            <h3 class="uppercase text-white">CATALOG</h3>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Men</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Women</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Kids</a>
+                        </div>
+
+                        <div>
+                            <h3 class="uppercase text-white">PRODUCTS</h3>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">New
+                                in</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Mens
+                                tee</a>
+                            <a href="#" class="block mt-2 text-sm text-gray-400 hover:underline">Womens
+                                tee</a>
+                        </div>
+
+                        <div>
+                            <h3 class="uppercase text-white">Contact</h3>
+                            <span class="block mt-2 text-sm text-gray-400 hover:underline">+880 173
+                                888 0000</span>
+                            <span class="block mt-2 text-sm text-gray-400 hover:underline">info@urbanstyle.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
+
+            <div>
+                <p class="text-center text-gray-500 dark:text-gray-400">© URBANSTYLE 2022 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+
+</html>
